@@ -35,6 +35,7 @@ Este projeto é um sistema backend para gerenciamento de vendas, desenvolvido co
 | POST   | `/venda/{usuarioId}` | Realizar uma venda para usuário |
 | GET    | `/venda`          | Listar todas as vendas           |
 | GET    | `/venda/{id}`     | Buscar venda por ID              |
+| GET    | `/venda/relatorio` | MOstra o relatorio de vendas    |
 | DELETE | `/venda/{id}`     | Excluir venda por ID             |
 
 ---
