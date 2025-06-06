@@ -38,3 +38,5 @@ Este projeto é um sistema backend para gerenciamento de vendas, desenvolvido co
 | DELETE | `/venda/{id}`     | Excluir venda por ID             |
 
 ---
+
+![Cadastro de Usuario](imgExemplos/cadastroUsuario1.png)
