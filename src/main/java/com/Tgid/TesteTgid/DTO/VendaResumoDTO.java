@@ -2,6 +2,7 @@ package com.Tgid.TesteTgid.DTO;
 
 import java.util.List;
 
+//Usado pra deixar o fluxo de dados melhor e mais seguro sem expor todas as informações das classes
 public class VendaResumoDTO {
     private Long idVenda;
     private String nomeUsuario;

@@ -1,5 +1,6 @@
 package com.Tgid.TesteTgid.DTO;
 
+//Usado pra deixar o fluxo de dados melhor e mais seguro sem expor todas as informações das classes
 public class ItemVendaDTO {
     private Long produtoId;
     private int quantidade;

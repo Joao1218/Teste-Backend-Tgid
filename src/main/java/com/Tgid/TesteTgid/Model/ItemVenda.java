@@ -3,15 +3,21 @@ package com.Tgid.TesteTgid.Model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
+//Usada pra dizer que é uma entidade
 @Entity
+//Aqui definimos o nome da tabela
 @Table(name = "tb_itemVenda" )
 public class ItemVenda {
 
+    //Essa anotação diz que é a chave primaria
     @Id
+    //É um estilo de como o id vai ser de numeros seguidos(ex:1,2,3,4,5...)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //Muitos objetos desta entidade estão relacionados a um único objeto de outra entidade.
     @ManyToOne
+    //Define a chave estrangeira
     @JoinColumn(name = "produto_id")
     private Produto produto;
 
@@ -21,7 +27,9 @@ public class ItemVenda {
 
     private Double subtotal;
 
+    //Muitos objetos desta entidade estão relacionados a um único objeto de outra entidade.
     @ManyToOne
+    //Define a chave estrangeira
     @JoinColumn(name = "venda_id")
     @JsonBackReference
     private Venda venda;

@@ -8,13 +8,16 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+//Anotação pra dizer que é um service
 @Service
 public class ProdutoService {
 
+    //Carrega o repositorio se precisarmos ficar gerando o construtor novamente
     @Autowired
     private ProdutoRepository repository;
 
     public Produto cadastrarProduto(Produto produto) throws Exception {
+        //Tratamento de excessões
         if(produto.getId() != null){
             throw new Exception("Produto já cadastrado");
         }
@@ -30,6 +33,7 @@ public class ProdutoService {
     }
 
     public void deletarProduto(Long id) throws Exception {
+        //Tratamento de excessões
         if(!repository.existsById(id)){
             throw new Exception("Produto não encontrado");
         }

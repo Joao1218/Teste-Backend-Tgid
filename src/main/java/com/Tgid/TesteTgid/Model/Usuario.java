@@ -2,17 +2,21 @@ package com.Tgid.TesteTgid.Model;
 
 import jakarta.persistence.*;
 
+//Usada pra dizer que é uma entidade
 @Entity
+//Aqui definimos o nome da tabela
 @Table(name = "tb_users")
 public class Usuario {
 
+    //Essa anotação diz que é a chave primaria
     @Id
+    //É um estilo de como o id vai ser de numeros seguidos(ex:1,2,3,4,5...)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
     private String email;
     private String cpf;
-
+    //Construtor vazio como padrão
     public Usuario() {
     }
 
