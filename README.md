@@ -39,4 +39,5 @@ Este projeto é um sistema backend para gerenciamento de vendas, desenvolvido co
 
 ---
 
-![Cadastro de Usuario](imgExemplos/cadastroUsuario1.png)
+## Imagens do código funcionando
+ - Na pasta imgExemplos tem demonstrações do código funcionando
